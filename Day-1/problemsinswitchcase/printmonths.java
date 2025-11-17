@@ -16,7 +16,7 @@ public class printmonths
                 System.out.println("JANUARY");
                 break;
             case 2 :
-                System.out.println("FEBUARY");
+                System.out.println("FEBRUARY");
                 break;
             case 3 :
                 System.out.println("MARCH");
