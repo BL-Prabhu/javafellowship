@@ -1,12 +1,12 @@
 package linecomparisonprogram;
 
 import java.util.Scanner;
-class PointOne
+class Point
 {
    private int x;
    private  int y;
 
-    public PointOne(int x, int y)
+    public Point(int x, int y)
     {
         this.x = x;
         this.y = y;
@@ -23,12 +23,12 @@ class PointOne
     }
 }
 
-class LineOne
+class Line
 {
-    public PointOne start;
-    public PointOne end;
+    public Point start;
+    public Point end;
 
-    public LineOne(PointOne start, PointOne end)
+    public Line(Point start, Point end)
     {
         this.start = start;
         this.end = end;
@@ -46,13 +46,13 @@ public class LineComparisonConcept
 {
     public static void main(String[] args)
     {
-        PointOne p1=new PointOne(1,2);
-        PointOne p2=new PointOne(3,4);
-        PointOne p3=new PointOne(5,6);
-        PointOne p4=new PointOne(7,8);
+        Point p1=new Point(1,2);
+        Point p2=new Point(0,4);
+        Point p3=new Point(5,6);
+        Point p4=new Point(7,8);
 
-        LineOne lineone=new LineOne(p1,p2);
-        LineOne linetwo=new LineOne(p3,p4);
+        Line lineone=new Line(p1,p2);
+        Line linetwo=new Line(p3,p4);
 
         System.out.println(lineone.length());
         System.out.println(linetwo.length());
@@ -65,7 +65,5 @@ public class LineComparisonConcept
         {
             System.out.println("TWO LINES ARE NOT EQUAL LENGTH");
         }
-
-
     }
 }
