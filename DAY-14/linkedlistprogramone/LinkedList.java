@@ -96,6 +96,57 @@ public class LinkedList
         return false;
     }
 
+    public void deleteMiddleElements(int value)
+    {
+        if(head == null)
+        {
+            System.out.println("EMPTY");
+            return;
+        }
+
+        if(head.data == value)
+        {
+            head=head.next;
+            return;
+        }
+
+        Node current=head;
+
+        while(current.next != null && current.next.data !=value)
+        {
+            current=current.next;
+        }
+
+        if(current.next == null)
+        {
+            System.out.println("VALUE NOT FOUND");
+            return;
+        }
+        current.next=current.next.next;
+    }
+
+    public void addSorted(int data)
+    {
+        Node newNode = new Node(data);
+
+        if (head == null || data < head.data)
+        {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node current = head;
+
+        while (current.next != null && current.next.data < data)
+        {
+            current = current.next;
+        }
+
+        newNode.next = current.next;
+        current.next = newNode;
+    }
+
+
     public void printList()
     {
         Node current=head;
