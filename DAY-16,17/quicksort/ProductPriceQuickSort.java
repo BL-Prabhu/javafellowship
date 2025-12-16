@@ -14,22 +14,22 @@ public class ProductPriceQuickSort
 
     public static int partition(int[] prices, int low, int high) {
 
-        int pivot = prices[high]; // last element as pivot
+        int pivot = prices[high];
         int i = low - 1;
 
-        for (int j = low; j < high; j++) {
+        for (int j = low; j < high; j++)
+        {
 
-            if (prices[j] < pivot) {
+            if (prices[j] < pivot)
+            {
                 i++;
 
-                // swap
                 int temp = prices[i];
                 prices[i] = prices[j];
                 prices[j] = temp;
             }
         }
 
-        // place pivot in correct position
         int temp = prices[i + 1];
         prices[i + 1] = prices[high];
         prices[high] = temp;
@@ -43,8 +43,8 @@ public class ProductPriceQuickSort
 
         quickSort(productPrices, 0, productPrices.length - 1);
 
-        System.out.println("Sorted Product Prices (Ascending Order):");
-        for (int price : productPrices) {
+        for (int price : productPrices)
+        {
             System.out.print(price + " ");
         }
     }

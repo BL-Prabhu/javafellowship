@@ -16,7 +16,7 @@ public class FirstAndLastOccurence
             if (arr[mid] == target)
             {
                 result = mid;
-                right = mid - 1; // move left
+                right = mid - 1;
             }
             else if (arr[mid] < target)
             {
@@ -45,7 +45,7 @@ public class FirstAndLastOccurence
             if (arr[mid] == target)
             {
                 result = mid;
-                left = mid + 1; // move right
+                left = mid + 1;
             }
             else if (arr[mid] < target)
             {
