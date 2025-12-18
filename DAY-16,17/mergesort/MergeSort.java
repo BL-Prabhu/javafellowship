@@ -5,48 +5,61 @@ import java.util.Arrays;
 public class MergeSort
 {
 
-    public static int[] merge(int[] arrayone,int[] arraytwo)
+    public static int[] merge(int[] arrayOne,int[] arrayTwo)
     {
-        int[] resultArray=new int[arrayone.length+arraytwo.length];
+        int[] resultArray=new int[arrayOne.length+arrayTwo.length];
         int index=0;
         int i=0;
         int j=0;
-        while(i<arrayone.length && j<arraytwo.length)
+
+        while(i<arrayOne.length && j<arrayTwo.length)
         {
-            if(arrayone[i]<arraytwo[j])
+            if(arrayOne[i]<arrayTwo[j])
             {
-                resultArray[index]=arrayone[i];
+                resultArray[index]=arrayOne[i];
                 index++;
                 i++;
             }
             else
             {
-                resultArray[index]=arraytwo[j];
+                resultArray[index]=arrayTwo[j];
                 index++;
                 j++;
             }
         }
-        while(i<arrayone.length)
+        while(i<arrayOne.length)
         {
-            resultArray[index]=arrayone[i];
+            resultArray[index]=arrayOne[i];
             index++;
             i++;
         }
-        while(j<arraytwo.length)
+        while(j<arrayTwo.length)
         {
-            resultArray[index]=arraytwo[j];
+            resultArray[index]=arrayTwo[j];
             index++;
             j++;
         }
         return resultArray;
     }
 
+    public static int[] mergeSort(int[] array)
+    {
+        if(array.length==1)
+        {
+            return array;
+        }
+        int midIndex=array.length/2;
+        int[] left=mergeSort(Arrays.copyOfRange(array,0,midIndex));
+        int[] right=mergeSort(Arrays.copyOfRange(array,midIndex,array.length));
+       return merge(left,right);
+    }
+
     public static void main(String[] args)
     {
-        int[] array1={2,4,6,8,10};
-        int[] array2={1,3,5,7,9};
-        int[] result=merge(array1,array2);
-
+        int[] inputArray={7,6,4,5,2,3,1};
+        int[] result=mergeSort(inputArray);
         System.out.println(Arrays.toString(result));
+
+
     }
 }
