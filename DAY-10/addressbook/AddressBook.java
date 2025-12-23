@@ -8,8 +8,9 @@ public class AddressBook {
     private ArrayList<ContactPerson> contacts = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
 
-    // Add contact using console input
-    public void addContactFromConsole() {
+
+    public void addContactFromConsole()
+    {
 
         System.out.print("Enter First Name: ");
         String firstName = sc.nextLine();
@@ -43,8 +44,8 @@ public class AddressBook {
         System.out.println("\nContact added successfully!\n");
     }
 
-    // Display all contacts
-    public void displayContacts() {
+    public void displayContacts()
+    {
         if (contacts.isEmpty()) {
             System.out.println("No contacts found.\n");
             return;
@@ -57,8 +58,8 @@ public class AddressBook {
         System.out.println();
     }
 
-    // Edit contact
-    public void editContact() {
+    public void editContact()
+    {
         System.out.print("Enter First Name to edit: ");
         String firstName = sc.nextLine();
 
@@ -97,8 +98,8 @@ public class AddressBook {
         System.out.println("Contact not found!\n");
     }
 
-    // Delete contact
-    public void deleteContact() {
+    public void deleteContact()
+    {
         System.out.print("Enter First Name to delete: ");
         String firstName = sc.nextLine();
 
@@ -115,8 +116,8 @@ public class AddressBook {
             System.out.println("Contact not found!\n");
     }
 
-    // Menu
-    public void menu() {
+    public void menu()
+    {
         int choice;
 
         do {
