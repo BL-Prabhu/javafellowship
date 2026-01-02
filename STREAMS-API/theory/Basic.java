@@ -102,10 +102,32 @@ package theory;
 // If hash value of that element is present in set by using equals method, if equals method returns true the element is not accepted
 // order is preserved in sequential stream
 
+// LIMIT METHOD
+// ----------------
+// It is a intermediate operation.
+// forEach() triggers the execution of limit
+// restricts the stream to at most maxSize elements.
+
+// PRIMITIVE STREAMS
+// --------------------
+// It is a special stream designed to work directly with primitive datatypes, to avoid autoboxing.
+// It is used for math-operation like SUM, MULTIPLY, AVERAGE, MAX, MIN.
+
+// TYPES OF PRIMITIVE STREAMS
+// ------------------------------
+// IntStream -> only for INT datatype.
+// DoubleStream -> only for DOUBLE datatype.
+// LongStream -> only for LONG datatype.
+
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 
 public class Basic
 {
@@ -187,6 +209,78 @@ public class Basic
 
         System.out.println("---------------------------------------------------------------------------------------------");
 
+        System.out.println("LIMIT METHOD");
+        System.out.println("---------------------");
+
+        input.stream()
+                .distinct()
+                .limit(3)
+                .forEach(a->System.out.println(a));
+
+        System.out.println("---------------------------------------------------------------------------------------------");
+
+        System.out.println("INT STREAM");
+        System.out.println("------------------");
+
+        IntStream.range(1,6)
+                .forEach(a->System.out.println(a));
+
+        System.out.println("CONVERT NORMAL STREAM INTO PRIMITIVE INT STREAM");
+        System.out.println("--------------------------------------------");
+
+        ArrayList<Integer> list=new ArrayList<>();
+        list.add(100);
+        list.add(200);
+        list.add(300);
+        list.add(400);
+        list.add(500);
+        list.add(600);
+
+                    list.stream()
+                        .mapToInt(Integer::intValue)
+                                .forEach(a->System.out.println(a));
+
+
+        System.out.println("LONG STREAM");
+        System.out.println("------------------");
+
+        LongStream.range(1,6)
+                .forEach(a->System.out.println(a));
+
+        System.out.println("CONVERT NORMAL STREAM INTO PRIMITIVE LONG STREAM");
+        System.out.println("-------------------------------------------------");
+
+        ArrayList<Long> longList = new ArrayList<>();
+        longList.add(100L);
+        longList.add(200L);
+        longList.add(300L);
+        longList.add(400L);
+        longList.add(500L);
+        longList.add(600L);
+
+
+        longList.stream()
+                .mapToLong(Long::longValue)
+                                .forEach(System.out::println);
+
+        System.out.println("DOUBLE STREAM");
+        System.out.println("------------------");
+
+        DoubleStream.iterate(1.0,n->n+1)
+                .limit(10)
+                .forEach(a->System.out.println(a));
+
+        ArrayList<Double> doubleList = new ArrayList<>();
+        longList.add(100L);
+        longList.add(200L);
+        longList.add(300L);
+        longList.add(400L);
+        longList.add(500L);
+        longList.add(600L);
+
+        doubleList.stream()
+                .mapToDouble(Double::doubleValue)
+                .forEach(a->System.out.println(a));
 
 
     }
