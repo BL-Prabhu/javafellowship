@@ -190,6 +190,36 @@ public class Oopsbannerapp
         }
     }
 
+    private static void uc5()
+    {
+        Map<Character, String[]> patternMap = buildPatternMap();
+        String word = "OOPS";
+        printBannerUC5(word, patternMap);
+    }
+
+    private static Map<Character, String[]> buildPatternMap()
+    {
+        Map<Character, String[]> map = new java.util.HashMap<>();
+        map.put('O', getOPattern());
+        map.put('P', getPPattern());
+        map.put('S', getSPattern());
+        return map;
+    }
+
+    private static void printBannerUC5(String word, Map<Character, String[]> map)
+    {
+        for (int row = 0; row < 9; row++) {
+            StringBuilder line = new StringBuilder();
+            for (char ch : word.toCharArray()) {
+                line.append(map.get(ch)[row]).append(" ");
+            }
+            System.out.println(line.toString());
+        }
+    }
+
+
+
+
 
     public static void main(String[] args)
     {
@@ -205,6 +235,9 @@ public class Oopsbannerapp
         System.out.println("USE-CASE-4");
         System.out.println("----------------------------------------------------------------------------------------");
         uc4();
+        System.out.println("USE-CASE-5");
+        System.out.println("----------------------------------------------------------------------------------------");
+        uc5();
 
     }
 }
