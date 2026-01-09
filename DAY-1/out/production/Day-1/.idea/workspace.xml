@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4855ed4-2e90-45fe-be7c-2ad1b71a937b" name="Changes" comment="&quot;spell correction&quot;">
+      <change afterPath="$PROJECT_DIR$/quadratic/Quadratic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Operators/Findmaxandmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Operators/Findmaxandmin.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PRABHUNAGAMANI&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PRABHUNAGAMANI/javafellowship.git&quot;,
+    &quot;accountId&quot;: &quot;232831ce-7614-467e-b780-6dc27612cff2&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="35b0VcyFH6wbNKrRUXBWveeFC5Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Checkpalindrome.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Checkvowels.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Distance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Findmaxandmin.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FirstProgram.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Readnumberunits.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Readsinglenumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Springseason.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Sumofnaturalnumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.printmonths.executor&quot;: &quot;Run&quot;,
+    &quot;Application.problemsinforloop.Sumofnaturalnumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.reversenumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.reversethenumber.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/javaprograms/javafellowship/Day-1&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Quadratic">
+    <configuration name="Checkpalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problemsinforloop.Checkpalindrome" />
+      <module name="Day-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="problemsinforloop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Distance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operators.Distance" />
+      <module name="Day-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Findmaxandmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operators.Findmaxandmin" />
+      <module name="Day-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Quadratic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="quadratic.Quadratic" />
+      <module name="Day-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quadratic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springseason" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operators.Springseason" />
+      <module name="Day-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Quadratic" />
+        <item itemvalue="Application.Checkpalindrome" />
+        <item itemvalue="Application.Distance" />
+        <item itemvalue="Application.Springseason" />
+        <item itemvalue="Application.Findmaxandmin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4855ed4-2e90-45fe-be7c-2ad1b71a937b" name="Changes" comment="" />
+      <created>1763363488795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763363488795</updated>
+    </task>
+    <task id="LOCAL-00001" summary="&quot;spell correction&quot;">
+      <option name="closed" value="true" />
+      <created>1763380431693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763380431693</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;spell correction&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;spell correction&quot;" />
+  </component>
+</project>
