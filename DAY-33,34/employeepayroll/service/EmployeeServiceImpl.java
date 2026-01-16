@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService
     private void calculatePayroll(Employee emp) {
         emp.setBasicPay(emp.getSalary());
         emp.setTaxablePay(emp.getBasicPay() - emp.getDeductions());
-        emp.setIncomeTax(emp.getTaxablePay() * 0.1); // 10% tax
+        emp.setIncomeTax(emp.getTaxablePay() * 0.1);
         emp.setNetPay(emp.getTaxablePay() - emp.getIncomeTax());
     }
 }

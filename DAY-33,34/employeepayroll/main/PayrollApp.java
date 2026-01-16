@@ -1,4 +1,4 @@
-package employeepayroll;
+package employeepayroll.main;
 
 import employeepayroll.dao.EmployeeDAOImpl;
 import employeepayroll.model.Employee;
