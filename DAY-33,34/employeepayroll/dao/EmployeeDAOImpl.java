@@ -5,6 +5,7 @@ import employeepayroll.util.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.util.List;
 
 public class EmployeeDAOImpl implements EmployeeDAO
 {
@@ -32,5 +33,10 @@ public class EmployeeDAOImpl implements EmployeeDAO
         } catch (Exception e) {
             throw new RuntimeException("Failed to insert employee", e);
         }
+    }
+
+    @Override
+    public List<Employee> getAllEmployees() {
+        return List.of();
     }
 }
