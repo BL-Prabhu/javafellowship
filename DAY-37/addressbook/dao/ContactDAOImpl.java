@@ -90,7 +90,49 @@ public class ContactDAOImpl implements ContactDAO
         {
             throw new RuntimeException(e);
         }
+    }
+    @Override
+    public void updateOperation(int id, Contact contact)
+    {
+        String updateQuery= "UPDATE " + DBInitializer.tableName + " SET " +
+                "first_name = ?, " +
+                "last_name = ?, " +
+                "address = ?, " +
+                "city = ?, " +
+                "state = ?, " +
+                "zip = ?, " +
+                "phone_number = ? " +
+                "WHERE id = ?";
 
+        try
+        {
+            Connection con=DriverManager.getConnection(getDBurl(),USER,PASSWORD);
+            PreparedStatement ps=con.prepareStatement(updateQuery);
+
+            ps.setString(1,contact.getFirstName());
+            ps.setString(2,contact.getLastName());
+            ps.setString(3,contact.getAddress());
+            ps.setString(4,contact.getCity());
+            ps.setString(5,contact.getState());
+            ps.setString(6,contact.getZip());
+            ps.setString(7,contact.getPhoneNumber());
+            ps.setInt(8, id);
+            int rows=ps.executeUpdate();
+
+            if(rows>0)
+            {
+                System.out.println("RECORD IS UPDATED SUCCESSFULLY");
+            }
+            else
+            {
+                System.out.println("ID NOT FOUND");
+            }
+
+        }
+        catch (SQLException e)
+        {
+            throw new RuntimeException(e);
+        }
 
     }
 }

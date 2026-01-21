@@ -6,6 +6,6 @@ public interface ContactDAO
 {
     public void insertOperation(Contact contact);
     public void fetchOperation();
-   // public void updateOperation(int id, String phone);
+    public void updateOperation(int id, Contact contact);
    // public void deleteOperation(int id);
 }

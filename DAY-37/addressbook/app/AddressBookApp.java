@@ -60,6 +60,39 @@ public class AddressBookApp
                 {
                     service.viewContact();
                 }
+                case 3 ->
+                {
+                    System.out.println("ENTER ID TO UPDATE");
+                    System.out.println("-------------------------");
+                    int id=scan.nextInt();
+                    scan.nextLine();
+
+                    Contact c=new Contact();
+
+                    System.out.print("First Name: ");
+                    c.setFirstName(scan.nextLine());
+
+                    System.out.print("Last Name: ");
+                    c.setLastName(scan.nextLine());
+
+                    System.out.print("Address: ");
+                    c.setAddress(scan.nextLine());
+
+                    System.out.print("City: ");
+                    c.setCity(scan.nextLine());
+
+                    System.out.print("State: ");
+                    c.setState(scan.nextLine());
+
+                    System.out.print("Zip: ");
+                    c.setZip(scan.nextLine());
+
+                    System.out.print("Phone Number: ");
+                    c.setPhoneNumber(scan.nextLine());
+
+                    service.updateContact(id,c);
+                    break;
+                }
             }
             }
 

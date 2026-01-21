@@ -24,4 +24,10 @@ public class ContactServiceImpl implements ContactService
     {
         contactDao.fetchOperation();
     }
+
+    @Override
+    public void updateContact(int id, Contact contact)
+    {
+        contactDao.updateOperation(id,contact);
+    }
 }
