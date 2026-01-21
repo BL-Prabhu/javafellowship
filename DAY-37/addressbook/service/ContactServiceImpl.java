@@ -30,4 +30,10 @@ public class ContactServiceImpl implements ContactService
     {
         contactDao.updateOperation(id,contact);
     }
+
+    @Override
+    public void deleteContact(int id)
+    {
+        contactDao.deleteOperation(id);
+    }
 }

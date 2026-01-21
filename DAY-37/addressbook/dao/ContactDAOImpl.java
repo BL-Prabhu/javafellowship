@@ -135,4 +135,32 @@ public class ContactDAOImpl implements ContactDAO
         }
 
     }
+
+    @Override
+    public void deleteOperation(int id)
+    {
+        String deleteQuery="DELETE FROM "+ DBInitializer.tableName+" WHERE id=?";
+
+        try
+        {
+            Connection con=DriverManager.getConnection(getDBurl(),USER,PASSWORD);
+            PreparedStatement ps=con.prepareStatement(deleteQuery);
+
+            ps.setInt(1,id);
+            int rows=ps.executeUpdate();
+
+            if(rows>0)
+            {
+                System.out.println("RECORD DELETE SUCCESSFULLY");
+            }
+            else
+            {
+                System.out.println("ID NOT FOUND");
+            }
+        }
+        catch (SQLException e)
+        {
+            throw new RuntimeException(e);
+        }
+    }
 }

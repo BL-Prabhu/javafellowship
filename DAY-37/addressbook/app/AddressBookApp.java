@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 public class AddressBookApp
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         DBInitializer.initialize();
 
         ContactService service = new ContactServiceImpl();
@@ -55,10 +56,12 @@ public class AddressBookApp
                     c.setPhoneNumber(scan.nextLine());
 
                     service.addContact(c);
+                    break;
                 }
                 case 2 ->
                 {
                     service.viewContact();
+                    break;
                 }
                 case 3 ->
                 {
@@ -92,6 +95,20 @@ public class AddressBookApp
 
                     service.updateContact(id,c);
                     break;
+                }
+                case 4 ->
+                {
+                    System.out.println("ENTER THE ID TO DELETE");
+                    System.out.println("---------------------------");
+                    int id=scan.nextInt();
+                    scan.nextLine();
+
+                    service.deleteContact(id);
+                    break;
+                }
+                case 5 ->
+                {
+                    System.exit(0);
                 }
             }
             }
