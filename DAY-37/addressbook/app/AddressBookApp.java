@@ -56,6 +56,10 @@ public class AddressBookApp
 
                     service.addContact(c);
                 }
+                case 2 ->
+                {
+                    service.viewContact();
+                }
             }
             }
 

@@ -18,4 +18,10 @@ public class ContactServiceImpl implements ContactService
         contactDao.insertOperation(contact);
         System.out.println("CONTACT ADDED SUCCESSFULLY");
     }
+
+    @Override
+    public void viewContact()
+    {
+        contactDao.fetchOperation();
+    }
 }
