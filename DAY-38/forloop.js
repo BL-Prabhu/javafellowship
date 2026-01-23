@@ -1,4 +1,4 @@
-// 2^n using for loop 
+
 
 let n = 5 ;
 let twoSquare  = [] ;

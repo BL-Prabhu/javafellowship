@@ -78,26 +78,25 @@ switch(num){
         break ;
 }
 
-// feet to inch 
+
 
 let feet = 18 ;
-// 1 feet = 12 inch 
+
 let convertInch = 18 * 12 ;
 console.log(convertInch);
 
-// inch to feet 
+
 
 let inch = 29 ;
 
 let convertFeet = 29 / 12 ;
 
 console.log(convertFeet.toFixed(2));
-// feet to meter 
+
 
 let convertMeters = feet * 0.3048 ;
 console.log(convertMeters.toFixed(2));
 
-// 1 meter = 3.28084 ;
 
 let convertedFeet = convertMeters * 3.28084 ;
 console.log(convertedFeet.toFixed(2));

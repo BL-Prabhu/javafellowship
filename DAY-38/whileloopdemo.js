@@ -40,7 +40,7 @@ function guessNumber() {
                 console.log("Invalid input. Try again.");
             }
 
-            guessNumber(); // repeat loop
+            guessNumber();
         }
     );
 }

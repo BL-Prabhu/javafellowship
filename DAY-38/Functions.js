@@ -22,7 +22,6 @@ let f = 189 ;
 
 findFreezingPoint(c, f);
 
-// check palindrome or not 
 
 function checkPalindrome(num){
 
@@ -48,7 +47,6 @@ let num2 = 3456 ;
 checkPalindrome(num2);
 
 
-// check prime and palindrome 
 
 function checkPalindromePrimeNumber(n){
 

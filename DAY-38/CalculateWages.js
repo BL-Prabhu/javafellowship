@@ -1,4 +1,4 @@
-// Employee Wage Calculation using Random Attendance
+
 
 const WAGE_PER_HOUR = 20;
 const MAX_WORKING_DAYS = 20;
@@ -14,18 +14,18 @@ while (
 ) {
     totalWorkingDays++;
 
-    // Random attendance: 0-Absent, 1-Part Time, 2-Full Time
+    
     let attendance = Math.floor(Math.random() * 3);
 
     let workingHours = 0;
 
     if (attendance === 1) {
-        workingHours = 4; // Part Time
+        workingHours = 4; 
     } else if (attendance === 2) {
-        workingHours = 8; // Full Time
-    } // Absent = 0 hrs
+        workingHours = 8; 
+    } 
 
-    // Prevent exceeding 160 hours
+    
     if (totalWorkingHours + workingHours > MAX_WORKING_HOURS) {
         workingHours = MAX_WORKING_HOURS - totalWorkingHours;
     }
