@@ -128,7 +128,7 @@ function sortContactsByCity(addressBook) {
         .forEach(c => console.log(`${c.name} | ${c.city} | ${c.state} | ${c.zip}`));
 }
 
-// Sort by state
+
 function sortContactsByState(addressBook) {
     console.log("Sorted By State");
     addressBook.contacts
@@ -179,15 +179,15 @@ try {
     addContactWithoutDuplicate(addressBook, contact1);
     addContactWithoutDuplicate(addressBook, contact2);
 
-    console.log("\nTotal Contacts:", getContactCount(addressBook));
+    console.log("Total Contacts:", getContactCount(addressBook));
 
     editContact(addressBook, "Prabhu", { city: "Mysore" });
     deleteContact(addressBook, "Ramesh");
 
-    console.log("\nAfter Delete:", getContactCount(addressBook));
+    console.log("After Delete:", getContactCount(addressBook));
     addressBook.displayContacts();
 
-    console.log("\nSearch By City:", searchPersonByCityOrState(addressBook, "Mysore"));
+    console.log("Search By City:", searchPersonByCityOrState(addressBook, "Mysore"));
     console.log("View By State:", viewPersonsByCityOrState(addressBook, "Karnataka"));
     console.log("Count By City:", countContactsByCityOrState(addressBook, "Mysore"));
 
