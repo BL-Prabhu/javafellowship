@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+  <h2></h2>
+  <div class="user">👤 Admin</div>
+</header>
+
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li class="active">🏠 All</li>
+      <li>📱 Electronics</li>
+      <li>👕 Fashion</li>
+      <li>🥤 Drinks</li>
+      <li>📚 Books</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <h3 class="section-title">Featured Products</h3>
+
+    <div class="products">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51Bp30CR3IL.jpg">
+        <h4>Product 1</h4>
+        <p class="price">₹1999</p>
+        <button onclick="buyProduct('Product 1')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.b0eL0AsMLOGM9D5sK6UY_wHaHa">
+        <h4>Product 2</h4>
+        <p class="price">₹999</p>
+        <button onclick="buyProduct('Product 2')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.bing.com/th/id/OIP.uMtJiXg8LVW4wL3QIpgR3QHaF6">
+        <h4>Product 3</h4>
+        <p class="price">₹1499</p>
+        <button onclick="buyProduct('Product 3')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.BMl8StVptQmlC16QXNQ-OQAAAA">
+        <h4>Product 4</h4>
+        <p class="price">₹899</p>
+        <button onclick="buyProduct('Product 4')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51Bp30CR3IL.jpg">
+        <h4>Product 1</h4>
+        <p class="price">₹1999</p>
+        <button onclick="buyProduct('Product 1')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.b0eL0AsMLOGM9D5sK6UY_wHaHa">
+        <h4>Product 2</h4>
+        <p class="price">₹999</p>
+        <button onclick="buyProduct('Product 2')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.bing.com/th/id/OIP.uMtJiXg8LVW4wL3QIpgR3QHaF6">
+        <h4>Product 3</h4>
+        <p class="price">₹1499</p>
+        <button onclick="buyProduct('Product 3')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.BMl8StVptQmlC16QXNQ-OQAAAA">
+        <h4>Product 4</h4>
+        <p class="price">₹899</p>
+        <button onclick="buyProduct('Product 4')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51Bp30CR3IL.jpg">
+        <h4>Product 1</h4>
+        <p class="price">₹1999</p>
+        <button onclick="buyProduct('Product 1')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.b0eL0AsMLOGM9D5sK6UY_wHaHa">
+        <h4>Product 2</h4>
+        <p class="price">₹999</p>
+        <button onclick="buyProduct('Product 2')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.bing.com/th/id/OIP.uMtJiXg8LVW4wL3QIpgR3QHaF6">
+        <h4>Product 3</h4>
+        <p class="price">₹1499</p>
+        <button onclick="buyProduct('Product 3')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.BMl8StVptQmlC16QXNQ-OQAAAA">
+        <h4>Product 4</h4>
+        <p class="price">₹899</p>
+        <button onclick="buyProduct('Product 4')">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
