@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Payroll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container payroll-container">
+
+  <div class="card payroll-card">
+    <h2 class="form-title">Employee Payroll</h2>
+
+    <!-- Employee Name -->
+    <div class="form-group">
+      <label for="empName" class="form-label">Employee Name</label>
+      <input
+        type="text"
+        id="empName"
+        class="form-input"
+        placeholder="Enter employee name">
+    </div>
+
+    <!-- Salary -->
+    <div class="form-group">
+      <label for="empSalary" class="form-label">Salary</label>
+      <input
+        type="number"
+        id="empSalary"
+        class="form-input"
+        placeholder="Enter salary">
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+      <label class="form-label">Gender</label>
+      <div class="radio-group gender-group">
+        <label class="radio-label">
+          <input
+            type="radio"
+            name="gender"
+            id="genderMale"
+            class="radio-input"
+            value="Male"> Male
+        </label>
+
+        <label class="radio-label">
+          <input
+            type="radio"
+            name="gender"
+            id="genderFemale"
+            class="radio-input"
+            value="Female"> Female
+        </label>
+      </div>
+    </div>
+
+    <!-- Department -->
+    <div class="form-group">
+      <label for="empDepartment" class="form-label">Department</label>
+      <select
+        id="empDepartment"
+        class="form-select department-select">
+        <option value="">Select Department</option>
+        <option>HR</option>
+        <option>Engineering</option>
+        <option>Sales</option>
+      </select>
+    </div>
+
+    <!-- State -->
+    <div class="form-group">
+      <label for="empState" class="form-label">State</label>
+      <select
+        id="empState"
+        class="form-select state-select">
+        <option value="">Select State</option>
+        <option>Tamil Nadu</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Andhra Pradesh</option>
+        <option>Maharashtra</option>
+      </select>
+    </div>
+
+    <!-- Start Date -->
+    <div class="form-group">
+      <label for="empStartDate" class="form-label">Start Date</label>
+      <input
+        type="date"
+        id="empStartDate"
+        class="form-input date-input">
+    </div>
+
+    <!-- Submit Button -->
+    <button
+      id="addEmployeeBtn"
+      class="btn btn-primary"
+      onclick="addEmployee()">
+      Add Employee
+    </button>
+
+    <p id="errorMsg" class="error-message"></p>
+  </div>
+
+  <!-- Table Section -->
+  <div class="table-card payroll-table-card">
+    <table class="employee-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Gender</th>
+          <th>Department</th>
+          <th>State</th>
+          <th>Start Date</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTable"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
